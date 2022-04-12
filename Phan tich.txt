@@ -1,0 +1,17 @@
+I) Phân tích giao di?n web    
+                    THE BAND
+
+    1.Header
+      +) search ( right)
+      +)Các thành ph?n khác (left)
+    2.Slider
+	
+    3.Content
+      +) About(gi?i thi?u)
+      +) Tour
+      +) Contact(d?a ch? liên h?)
+      +) Image ( Map:b?n d? gi?i thi?u)
+    4.Footer
+II) D?ng base ( xây móng )
+III) Xây d?ng t?ng ph?n
+IV) Hoàn thi?n
