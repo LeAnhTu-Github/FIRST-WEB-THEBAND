@@ -93,6 +93,9 @@ html {
     padding: 0 24px; 
     display: block;   
 }
+#nav > li:hover .subnav{
+    display: block;
+}
 /* hover dung de khi an vao moi hien */
 #nav > li:hover > a,
 #nav .subnav li:hover a{
@@ -100,9 +103,6 @@ html {
     background-color: #ccc;
     /* display block dung de mau xam full o */
 
-}
-#nav > li:hover .subnav{
-    display: block;
 }
 #nav .subnav{
     /* display none dung de an  */
@@ -126,17 +126,40 @@ html {
 }
 #header .search-btn{
     float: right;
-    line-height: 46px;
-    color: #fff;
     padding: 0 21px;
     /* cursor de doi tam chuot
     pointer la hinh ban tay */
     cursor: pointer;
+    display: block;
+      
+}
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+    display: none;
+
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    background-color: #ccc;
+    color: #000; 
 }
 #header .search-btn:hover{
     background-color: #f44336;
+    cursor: pointer;
+}
+#header .menu-icon{
+    line-height: 46px;
+    font-size: 20px;
+    color: #fff;
 }
 #header .search-icon{
+    line-height: 46px;
+    color: #fff;
+    font-size: 20px;
 
 }
 #slider{
@@ -170,9 +193,12 @@ html {
 }
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading{
     font-size: 30px;
@@ -253,7 +279,7 @@ html {
 /* PLACES */
 .places-list{
     /* Dùng margin âm để 2 bên mép bằng nhau */
-    margin-top: 32px;
+    margin-top: 16px;
 
 }
 .place-img{
@@ -293,6 +319,7 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
 }
 .btn:hover{
     cursor: pointer;
@@ -441,9 +468,6 @@ header.modal-header{
 #footer .copyright a {
     color: rgba(0, 0, 0, 0.6);
 }
-
-
-
 .modal-footer{
     padding: 16px;
     text-align: right;
@@ -460,5 +484,15 @@ header.modal-header{
         opacity: 1;
         transform: translateY(0);
     }
+}
+/* Responsive Tablet 740px - <1024px */
+@media (min-width: 740px ) and (max-width: 1023px)
+{
+
+}
+/* Responsive Mobile 0 - <740px */
+@media (max-width: 740px)
+{
+
 }
 
